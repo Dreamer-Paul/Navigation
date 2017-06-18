@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* ----
+
+# Navigation
+# By: Dreamer-Paul
+# Last Update: 2017.6.18
+
+一个简单的个人首页，让你的 Fans 方便快捷的找到你在各站点的联系方式~
+
+欢迎你加入缤奇，和我们一起改变世界。
+本项目为缤奇保罗原创，并遵守 MIT 开源协议。保罗的个人博客：https://hi-paul.space
+
+---- */
+
+html, body, main{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    user-select: none;
+    font: lighter 16px "微软雅黑";
+}
+a{
+    text-decoration: none;
+}
+
+.bg{
+    z-index: -1;
+    width: 3000px;
+    height: 3000px;
+    position: fixed;
+    top: calc(50% - 1500px);
+    left: calc(50% - 1500px);
+
+    animation: bg-rotate 20s infinite linear;
+    background: linear-gradient(45deg, #20b57d 40%, #258ec5 60%);
+}
+
+@keyframes bg-rotate {
+    0%{ transform: rotate(0) }
+    100%{ transform: rotate(360deg) }
+}
+
+main{
+    display: table;
+    margin: 0 auto;
+}
+
+.content{
+    padding: 50px 0;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logo{
+    margin-bottom: 50px;
+}
+.logo img{
+    height: auto;
+    max-width: 100px;
+    transition: transform 0.3s;
+}
+.logo img:hover{
+    transform: scale(1.1, 1.1) rotate(1turn);
+}
+
+.links{
+    max-width: 300px;
+}
+
+.links a{
+    color: #fff;
+    display: block;
+    min-width: 80px;
+    padding: 1em 2em;
+    text-align: center;
+    margin-bottom: 1em;
+    border-radius: 100px;
+    border: #fff 1px solid;
+    transition: background 0.3s, color 0.3s, opacity 0.3s, transform 0.3s;
+}
+.links a:last-child{
+    margin-bottom: 0;
+}
+
+.links a:hover{
+    color: #258ec5;
+    background: #fff;
+    transform: scale(1.1, 1.1);
+}
+.links a:active{
+    opacity: 0.7;
+    transform: scale(0.9, 0.9);
+}
+
+footer{
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    position: fixed;
+    text-align: center;
+}
+
+footer a{
+    color: inherit;
+}
