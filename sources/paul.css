@@ -4,7 +4,7 @@
 
 # Navigation
 # By: Dreamer-Paul
-# Last Update: 2017.6.18
+# Last Update: 2017.7.27
 
 一个简单的个人首页，让你的 Fans 方便快捷的找到你在各站点的联系方式~
 
@@ -26,10 +26,12 @@ a{
     text-decoration: none;
 }
 
-.bg{
+main:before{
+    content: '';
     z-index: -1;
     width: 3000px;
     height: 3000px;
+    display: block;
     position: fixed;
     top: calc(50% - 1500px);
     left: calc(50% - 1500px);
@@ -49,7 +51,8 @@ main{
 }
 
 .content{
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 70px;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
