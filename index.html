@@ -2,11 +2,10 @@
 
 # Navigation
 # By: Dreamer-Paul
-# Last Update: 2017.12.14
+# Last Update: 2022.3.11
 
-一个简单的个人首页，让你的 Fans 方便快捷的找到你在各站点的联系方式~
+一个简单的个人首页，让你的朋友方便快捷的，找到你在各站点的社交链接
 
-欢迎你加入缤奇，和我们一起改变世界。
 本代码为奇趣保罗原创，并遵守 MIT 开源协议。欢迎访问我的博客：https://paugram.com
 
 ---->
@@ -38,7 +37,7 @@
             position: fixed;
             top: calc(50% - 1500px);
             left: calc(50% - 1500px);
-            animation: bg-rotate 20s infinite linear;
+            animation: bg-rotate 15s infinite linear;
             background: linear-gradient(45deg, #20b57d 40%, #258ec5 60%);
         }
 
@@ -122,9 +121,10 @@
 <main class="container">
     <div class="content">
         <div class="logo">
-            <img src="static/avatar.jpg" title="保罗的个人首页"/>
+            <img src="static/avatar.jpg" alt="保罗的个人首页" />
         </div>
         <div class="links">
+            <a href="https://paul.ren">主页</a>
             <a href="https://paugram.com">博客</a>
             <a href="http://weibo.com/234891753/" target="_blank">微博</a>
             <a href="http://music.163.com/#/user/home?id=7041859" target="_blank">网易云</a>
@@ -135,7 +135,7 @@
     </div>
 </main>
 <footer>
-    <p>© 2017 By <a href="https://paugram.com" target="_blank">Dreamer-Paul</a>.</p>
+    <p>© <script>document.write(new Date().getFullYear())</script> By <a href="https://paugram.com" target="_blank">Dreamer-Paul</a>.</p>
 </footer>
 </body>
 </html>
